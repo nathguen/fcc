@@ -1,0 +1,51 @@
+<style>
+    md-card {
+        display: flex;
+        flex-direction: row;
+        background: #EEE;
+        margin-bottom: 10px;
+        padding: 5px;
+    }
+
+    .profile-info {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        /*justify-content: space-between;*/
+    }
+
+    h1 {
+        font-size: 1.2rem;
+        margin: 15px 0 0 0;
+    }
+
+    a {
+        margin: 3px 0;
+        text-decoration: none;
+        color: rgb(50,50,50);
+        font-size: 1.1rem;
+    }
+
+    md-card > md-icon {
+        font-size: 100px;
+        width: 110px;
+        display: block;
+        margin: 0;
+        padding: 0;
+        height: 100px;
+    }
+
+    a > md-icon {
+        font-size: 1.2rem;
+        vertical-align: top;
+    }
+</style>
+
+<md-card>
+    <md-icon>account_box</md-icon>
+    <div class="profile-info">
+        <h1>{{ name }}</h1>
+        <a href="mailto:{{ email }}"><md-icon>mail</md-icon>{{ email }}</a>
+        <a href="tel:{{ phone }}"><md-icon>phone</md-icon>{{ phone }}</a>
+    </div>
+</md-card>

@@ -1,3 +1,12 @@
-<h1>
-  {{title}}
-</h1>
+<div class="top-banner">
+  <span class="logo-abbrev">FCC</span>
+  <span class="logo-text"><span class="logo-text--highlight">F</span>oundation for <span class="logo-text--highlight">C</span>onnecting <span class="logo-text--highlight">C</span>ommunities</span>
+</div>
+<nav>
+  <a routerLink="/home"><md-icon>home</md-icon>Home</a>
+  <a routerLink="/donate"><md-icon>attach_money</md-icon>Donate</a>
+  <a routerLink="/social-connections"><md-icon>people</md-icon>Social Connections</a>
+  <a routerLink="/economic-connections"><md-icon>share</md-icon>Economic Connections</a>
+</nav>
+
+<router-outlet></router-outlet>

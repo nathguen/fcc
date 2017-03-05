@@ -1,1 +1,103 @@
 /* You can add global styles to this file, and also import other style files */
+
+// Import a pre-built theme
+@import '~@angular/material/core/theming/prebuilt/indigo-pink';
+
+@font-face {
+    src: url('https://fonts.googleapis.com/css?family=Vollkorn:700');
+    font-family: 'Vollkorn';
+}
+
+html {
+    background: #EEE;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+}
+
+.top-banner {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 60px;
+    background: blue;
+    padding: 10px 20px;
+    box-sizing: border-box;
+    z-index: 101;
+    box-shadow: 0 1px 4px rgba(100,100,100, .4);
+
+    * {
+        color: white;
+    }
+
+    .logo-abbrev {
+        font-size: 2rem;
+    }
+
+    .logo-text {
+        font-size: 1.5rem;
+        margin-left: 30px;
+
+        .logo-text--highlight {
+            color: yellow;
+        }
+    }
+}
+
+md-card.body-card {
+    width: 90%;
+    max-width: 800px;
+    margin-bottom: 15px;
+}
+
+nav {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    left: 0;
+    width: 200px;
+    top: 0;
+    bottom: 0;
+    padding-top: 80px;
+    background: darkblue;
+    box-sizing: border-box;
+    box-shadow: 1px 0 4px rgba(100,100,100,.6);
+    z-index: 100;
+
+    a {
+        color: white;
+        text-decoration: none;
+        font-size: 1.2rem;
+        font-family: sans-serif;
+        padding: 15px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+
+        md-icon {
+            margin-right: 10px;
+        }
+
+        &:hover {
+            background: rgba(255,255,255,.1);
+        }
+
+        &:active {
+            background: rgba(255,255,255,.2);
+        }
+    }
+}
+
+.sebm-google-map-container {
+  height: 300px;
+}
+
+ng-component {
+    margin-left: 250px;
+    display: block;
+    margin-top: 70px;
+}
